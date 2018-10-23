@@ -22,17 +22,39 @@ body {
 }
 
 .hide {
-	dispaly: none;
+	display: none;
 }
 
+.large-nav a:hover {
+	color: blue;
+}
+
+#underline {
+	text-decoration: underline;
+}
 
 /*SMALL SCREEN STYLES*/
 
 /*-----header-----*/
+.store-name p {
+	display: none;
+}
+	
+.pic-container {
+	height: 166px;
+	overflow: hidden;
+}
+
 .background-img {
 	background-image: url("../images/comic-book-faces.jpg");
-	height: 166px;
+	height: 364px;
+    background-size: cover;
+}
+
+.background-img-about {
+	background-image: url("https://barkpost.com/wp-content/uploads/2015/06/dog-family-reunion-2.jpg");
 	background-size: cover;
+	height: 166px;
 }
 
 .small-nav-closed, .large-nav {
@@ -59,6 +81,8 @@ h1 {
 .hero-img {
 	width: 100%;
 }
+
+
 
 /*-----open nav-----*/
 
@@ -141,6 +165,7 @@ h2 {
 	height: 168px;
 	border-top: 1px solid #979797;
 	border-bottom: 1px solid #979797;
+	margin-top: 40px;
 }
 
 .coupon-article p {
@@ -166,15 +191,17 @@ h2 {
 	flex-direction: column;
     margin: 43px auto 0;
     max-width: 344px;
+    align-items: center;
 }
 
 .products img {
-	max-width: 344px;
+	max-width: 215px;
 }
 
 h3 {
 	margin: 16px 4px;
-	font-size: 24px;
+	font-size: 18px;
+    max-width: 215px;
 }
 
 /*-----newsletter form-----*/
@@ -239,6 +266,9 @@ form .button {
 	text-align: center;
 }
 
+form p {
+	color: red;
+}
 
 /*-----footer-----*/
 footer {
@@ -249,6 +279,14 @@ footer {
 
 
 @media only screen and (min-width: 480px) {
+	.store-name p {
+		display: inline;
+	    position: relative;
+	    top: -36px;
+	    left: 22px;
+	    font-size: 20px;
+	}
+
 	.hamburger-icon {
 		font-size: 0;
 	}
@@ -277,6 +315,7 @@ footer {
 	.home-link {
 		margin-top: 0;
 	}
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 759px) {
@@ -287,17 +326,32 @@ footer {
 	}
 
 	.large-nav {
-		top: -86px;
+		top: -83px;
+	}
+	
+	.pic-container {
+		height: 252px;
+		overflow: hidden;
 	}
 
 	.background-img {
 		background-image: url("../images/comic-book-faces.jpg");
-		height: 266px;
+		height: 400px;
 		background-size: cover;
+	}
+
+	.background-img-about {
+		background-image: url("https://barkpost.com/wp-content/uploads/2015/06/dog-family-reunion-2.jpg");
+		background-size: cover;
+		height: 266px;
 	}
 	
 	form {
 		max-width: 557px;
+	}
+
+	.fa-times {
+		display: none;
 	}
 }
 
@@ -307,9 +361,19 @@ footer {
 		display: flex;
 	}
 
+   	.pic-container {
+		height: 366px;
+		overflow: hidden;
+	}
+
 	.background-img {
 		background-image: url("../images/comic-book-faces.jpg");
-		height: 366px;
+		height: 400px;
+		background-size: cover;
+	}
+
+	.background-img-about {
+		height: 400px;
 		background-size: cover;
 	}
 

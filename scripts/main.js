@@ -11,7 +11,7 @@ $('.hamburger-icon').on('click', showHideNav);
 $('.fa-times').on('click', showHideNav);
 
 
-$("#mc-embedded-subscribe-form").on('submit', function(e) {
+$("#mc-embedded-subscribe").on('click', function(e) {
 	e.preventDefault();
 	var firstNameInput = $("#mce-FNAME").val();
 	var lastNameInput = $("#mce-LNAME").val();
