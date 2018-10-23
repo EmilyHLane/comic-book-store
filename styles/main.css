@@ -25,15 +25,16 @@ body {
 	dispaly: none;
 }
 
-.background-img {
-	background-image: url("../images/comic-book-faces.jpg");
-	height: 168px;
-	background-size: cover;
-}
 
 /*SMALL SCREEN STYLES*/
 
 /*-----header-----*/
+.background-img {
+	background-image: url("../images/comic-book-faces.jpg");
+	height: 166px;
+	background-size: cover;
+}
+
 .small-nav-closed, .large-nav {
 	display: none;
 }
@@ -42,12 +43,12 @@ body {
 	height: 70px;
 }
 
-/*.hamburger-icon {
+.hamburger-icon {
     font-size: 39px;
     margin-left: 16px;
     position: relative;
     bottom: 70px;
-}*/
+}
 
 h1 {
 	text-align: center;
@@ -248,6 +249,9 @@ footer {
 
 
 @media only screen and (min-width: 480px) {
+	.hamburger-icon {
+		font-size: 0;
+	}
 
 	.large-nav {
 		display: flex;
@@ -273,10 +277,10 @@ footer {
 	.home-link {
 		margin-top: 0;
 	}
-
 }
 
-@media only screen and (min-width: 480px) and (max-width: 680px) {
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+	
 	.large-nav a {
 	    padding: 8px;
 	    font-size: 17px;
@@ -287,17 +291,30 @@ footer {
 	}
 
 	.background-img {
-		height: 257px;
+		background-image: url("../images/comic-book-faces.jpg");
+		height: 266px;
+		background-size: cover;
 	}
+	
+	form {
+		max-width: 557px;
+	}
+}
 
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 760px) {
 
 	.products {
 		display: flex;
 	}
 
 	.background-img {
-		height: 315px;
+		background-image: url("../images/comic-book-faces.jpg");
+		height: 366px;
+		background-size: cover;
+	}
+
+	form {
+		max-width: 557px;
 	}
 
 }
