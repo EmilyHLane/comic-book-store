@@ -1,12 +1,85 @@
+/*GLOBAL STYLES*/
+
 @font-face {
 	font-family: nevis;
 	src: url(fonts/nevis.ttf);
 }
 
+.skip-to-main {
+	position: fixed;
+	top: -200px;	
+}
+
+.skip-to-main:focus {
+	top: 5px;
+	background-color: white;
+}
+
 body {
 	background-color: yellow;
+	font-family: nevis, Gotham, sans-serif;
+	margin: 0;
+}
+
+/*SMALL SCREEN STYLES*/
+
+/*-----header-----*/
+.small-nav-closed, .small-nav-open, .large-nav {
+	display: none;
+}
+
+.hamburger-icon {
+    font-size: 30px;
+    margin-left: 16px;
+    position: relative;
+    bottom: 55px;
 }
 
 h1 {
-	font-family: nevis, Gotham, sans-serif;
+	text-align: center;
+	margin-top: 35px;
 }
+
+.hero-img {
+	width: 100%;
+}
+
+/*-----main-----*/
+
+main {
+	margin: 0 16px;
+}
+
+h3 {
+	margin: 16px 4px;
+}
+
+.products section {
+	display: flex;
+	flex-direction: column;
+    margin: 0 auto;
+    max-width: 344px;
+}
+
+.products img {
+	max-width: 344px;
+}
+
+/*-----footer-----*/
+footer {
+	text-align: center;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

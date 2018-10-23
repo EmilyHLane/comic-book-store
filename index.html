@@ -7,25 +7,54 @@
 	<title>EOSS | Comic Book Store</title>
 </head>
 <body>
-	<a href="#main">Skip to main content</a>
+	<a href="#main" class="skip-to-main">Skip to main content</a>
 
 	<header>
-		<i class="fas fa-bars"></i>
-		<nav>
+		<div class="small-header">
+			<h1>ESOS</h1>
+			<i class="fas fa-bars hamburger-icon"></i>
+		</div>
+
+		<nav class="small-nav-closed small-nav-open large-nav">
 			<a href="index.html">Home</a>
 			<a href="products.html">Products</a>
 			<a href="newsletter.html">Newsletter</a>
 			<a href="about.html">About</a>
 		</nav>
+
+		<img class="hero-img" src="images/comic-book-faces.jpg" alt="photo of comic book heros and villians" />
 	</header>
 
 	<main id="main" role="main">
-		<h1>EOSS</h1>
-		<h2>Comic Book Store</h2>
+		<article class="welcome-article">
+			<h2>Welcome to ESOS!</h2>
 
-		<p>Welcome to ESOS! Your friendly neighborhood comic book store. We have everything ranging from the classics to the latest and greatest. To be in the know, swing by the store and say “hi” or sign up for our newsletter up top! We promise to never share your info with anyone else and we never spam. Plus, you’ll get a coupon for 20% off one item. Great deal right?
-		</p>
-		
+			<p>Your friendly neighborhood comic book store. We have everything ranging from the classics to the latest and greatest. To be in the know, swing by the store and say “hi” or sign up for our newsletter up top! We promise to never share your info with anyone else and we never spam. Plus, you’ll get a coupon for 20% off one item. Great deal right?
+			</p>
+		</article>
+
+		<article class="coupon-article">
+			<p>Get 20% off your first purchase when signing up for our newsletter!</p>
+			<a href="newsletter.html"><button>Sign Up</button></a>
+		</article>
+
+		<article class="products">
+			<section>
+				<img src="https://picsum.photos/344/184" />
+				<h3>Product</h3>
+			</section>
+
+			<section>
+				<img src="https://picsum.photos/344/184" />
+				<h3>Product</h3>
+			</section>
+			
+			<section>
+				<img src="https://picsum.photos/344/184" />
+				<h3>Product</h3>
+			</section>
+		</article>
+
 	</main>
 
 	<footer>&copy; 2018 EOSS Comics, Inc.</footer>
