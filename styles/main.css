@@ -21,10 +21,14 @@ body {
 	margin: 0;
 }
 
+.hide {
+	dispaly: none;
+}
+
 /*SMALL SCREEN STYLES*/
 
 /*-----header-----*/
-.small-nav-closed, .small-nav-open, .large-nav {
+.small-nav-closed, .large-nav {
 	display: none;
 }
 
@@ -47,6 +51,64 @@ h1 {
 
 .hero-img {
 	width: 100%;
+}
+
+/*-----open nav-----*/
+
+.small-nav-open {
+	animation-duration: .5s;
+	animation-name: slider;
+	animation-timing-function: ease-in-out;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	width: 170px;
+}
+
+@keyframes slider {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 170px;
+  } 
+}
+
+.small-nav-open a {
+	color: white;
+	text-decoration: none;
+	line-height: 2;
+	font-size: 30px;
+	animation-duration: .6s;
+	animation-name: fade-in;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  } 
+}
+
+.home-link {
+	margin-top: 10px;
+}
+
+.close-icon {
+	color: white;
+	display: block;
+    z-index: 1;
+    position: fixed;
+    top: 46px;
+    left: 164px;
+    font-size: 30px;
 }
 
 /*-----main-----*/
@@ -88,7 +150,7 @@ h2 {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 	border-radius: 3px;
 	margin-top: 10px;
-	font-family: nevis;
+	font-family: nevis, Gotham, sans-serif;
 }
 
 .products section {
@@ -142,7 +204,7 @@ form {
 
 input {
 	color: #989898;
-	font-family: nevis-Bold;
+	font-family: nevis, Gotham, sans-serif;
 	font-size: 16px;
 	text-align: justify;
 	border: 2px solid black;

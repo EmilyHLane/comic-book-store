@@ -12,14 +12,14 @@
 		<div class="small-header">
 			<h1>ESOS</h1>
 			<i class="fas fa-bars hamburger-icon"></i>
+			<i class="fas fa-times hide"></i>
+			<nav class="nav small-nav-closed">
+				<a class="home-link" href="index.html">Home</a>
+				<a href="products.html">Products</a>
+				<a href="newsletter.html">Newsletter</a>
+				<a href="about.html">About</a>
+			</nav>
 		</div>
-
-		<nav class="small-nav-closed small-nav-open large-nav">
-			<a href="index.html">Home</a>
-			<a href="products.html">Products</a>
-			<a href="newsletter.html">Newsletter</a>
-			<a href="about.html">About</a>
-		</nav>
 
 		<img class="hero-img" src="images/comic-book-faces.jpg" alt="photo of comic book heros and villians" />
 	</header>
@@ -41,18 +41,18 @@
 					<div class="form-name-fields">
 						<div class="mc-field-group">
 							<!-- <label for="mce-FNAME">First Name </label> -->
-							<input type="text" value="" name="FNAME" aria-label="First Name" class="first-name" id="mce-FNAME" placeholder="First Name">
+							<input required type="text" value="" name="FNAME" aria-label="First Name" class="first-name" id="mce-FNAME" placeholder="First Name">
 						</div>
 
 						<div class="mc-field-group">
 							<!-- <label for="mce-LNAME">Last Name </label> -->
-							<input type="text" value="" name="LNAME" aria-label="Last Name" class="" id="mce-LNAME" placeholder="Last Name">
+							<input required type="text" value="" name="LNAME" aria-label="Last Name" id="mce-LNAME" placeholder="Last Name">
 						</div>
 					</div>
 
 					<div class="mc-field-group">
 						<!-- <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>-->
-						<input type="email" value="" name="EMAIL" aria-label="Email Address" class="required email" id="mce-EMAIL" placeholder="Email Address">
+						<input required type="email" value="" name="EMAIL" aria-label="Email Address" class="required email" id="mce-EMAIL" placeholder="Email Address">
 					</div>
 
 
@@ -78,6 +78,7 @@
 	</footer>
 	
 	<!-- scripts -->
+	<script type="text/javascript" src="scripts/jquery.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
