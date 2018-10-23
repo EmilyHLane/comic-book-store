@@ -16,13 +16,19 @@
 }
 
 body {
-	background-color: yellow;
+	background-color: white;
 	font-family: nevis, Gotham, sans-serif;
 	margin: 0;
 }
 
 .hide {
 	dispaly: none;
+}
+
+.background-img {
+	background-image: url("../images/comic-book-faces.jpg");
+	height: 168px;
+	background-size: cover;
 }
 
 /*SMALL SCREEN STYLES*/
@@ -36,12 +42,12 @@ body {
 	height: 70px;
 }
 
-.hamburger-icon {
+/*.hamburger-icon {
     font-size: 39px;
     margin-left: 16px;
     position: relative;
     bottom: 70px;
-}
+}*/
 
 h1 {
 	text-align: center;
@@ -119,7 +125,8 @@ main {
 
 h2 {
 	margin-top: 27px;
-	font-size: 20px;
+	font-size: 27px;
+	text-align: center;
 }
 
 .welcome-article p {
@@ -238,6 +245,65 @@ footer {
     width: 100%;
     margin: 40px 0 10px;
 }
+
+
+@media only screen and (min-width: 480px) {
+
+	.large-nav {
+		display: flex;
+    	position: relative;
+    	top: -100px;
+    	justify-content: flex-end;
+    	width: 100%;
+	}
+
+	.large-nav a {
+		color: black;
+		text-decoration: none;
+		padding: 20px;
+		font-size: 24px;
+	}
+
+	h1 {
+    	text-align: left;
+    	padding-left: 20px;
+    	margin-top: 12px;
+    }
+
+	.home-link {
+		margin-top: 0;
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 680px) {
+	.large-nav a {
+	    padding: 8px;
+	    font-size: 17px;
+	}
+
+	.large-nav {
+		top: -86px;
+	}
+
+	.background-img {
+		height: 257px;
+	}
+
+@media only screen and (min-width: 1090px) {
+
+	.products {
+		display: flex;
+	}
+
+	.background-img {
+		height: 315px;
+	}
+
+}
+
+
+
 
 
 
