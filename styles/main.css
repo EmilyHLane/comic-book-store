@@ -39,7 +39,7 @@ body {
 .store-name p {
 	display: none;
 }
-	
+
 .pic-container {
 	height: 166px;
 	overflow: hidden;
@@ -173,6 +173,10 @@ h2 {
 	text-align: center;
 }
 
+.coupon-article a {
+	margin-top: 10px;
+}
+
 /*styles all buttons*/
 .button {
 	background-color: black;
@@ -182,7 +186,7 @@ h2 {
 	padding: 12.5px 46px;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 	border-radius: 3px;
-	margin-top: 10px;
+/*	margin-top: 10px;*/
 	font-family: nevis, Gotham, sans-serif;
 }
 
