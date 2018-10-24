@@ -25,9 +25,6 @@ body {
 	display: none;
 }
 
-.large-nav a:hover {
-	color: blue;
-}
 
 #underline {
 	text-decoration: underline;
@@ -333,6 +330,10 @@ footer {
 		top: -83px;
 	}
 	
+	.large-nav a:hover {
+	color: blue;
+	}
+	
 	.pic-container {
 		height: 252px;
 		overflow: hidden;
@@ -383,6 +384,10 @@ footer {
 
 	form {
 		max-width: 557px;
+	}
+
+	.large-nav a:hover {
+		color: blue;
 	}
 
 }
