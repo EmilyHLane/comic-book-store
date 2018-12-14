@@ -34,3 +34,12 @@ Summary of user stories provided to each team:
 - JavaScript
 - JQuery
 - MailChimp
+
+## Wins
+
+- Good collaboration and communication between designers and developer
+- Able to complete MVP in time allotted 
+- A fun experience overall!
+
+## Challenges
+With three designers and one developer, we just couldn't complete everything we wanted. To address this issue, we prioritized the features and bug fixes - keeping MVP requirements at the top of the list.
