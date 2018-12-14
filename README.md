@@ -8,8 +8,8 @@ Create a way for users to sign up to receive your client’s newsletter via emai
 
 ## Team
 
-UX Design: Omid Moayedi, Sam Koch, Shara Shimabukuro
-Web Development: Emily Lane
+- UX Design: Omid Moayedi, Sam Koch, Shara Shimabukuro
+- Web Development: Emily Lane
 
 ## User stories
 
@@ -23,8 +23,9 @@ Summary of user stories provided to each team:
 
 ## Wireframes
 
-![Desktop](images/wire_homepage.pdf)
-![Mobile](images/wire_mobile.pdf)
+![Desktop](images/wire_homepage.jpg)
+
+- Note: additional annotated wireframes provided not shown.
 
 ## Technology
 
